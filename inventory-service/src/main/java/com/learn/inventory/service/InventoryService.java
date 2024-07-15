@@ -17,7 +17,7 @@ public class InventoryService {
     @PostConstruct
     private void init(){
         inventoryMap = new HashMap<>();
-
+        // key- productId | value-available quantity of that product
         inventoryMap.put(1, 2);
         inventoryMap.put(2, 3);
         inventoryMap.put(3, 4);
