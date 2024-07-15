@@ -46,6 +46,21 @@
             <artifactId>common-dtos</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+<!--    database specially designed for reactive programming    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-r2dbc</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+<!--        Reactive Relational Database Connectivity Driver Implementation for H2-->
+        <dependency>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
     </dependencies>
 
 </project>
