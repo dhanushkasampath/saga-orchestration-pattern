@@ -1,4 +1,4 @@
-package com.learn;
+package com.learn.inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

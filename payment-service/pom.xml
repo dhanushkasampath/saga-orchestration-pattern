@@ -39,6 +39,13 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!--        Add the dependency of common-dto module-->
+        <dependency>
+            <groupId>com.learn</groupId>
+            <artifactId>common-dtos</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

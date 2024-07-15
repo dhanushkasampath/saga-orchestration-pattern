@@ -1,11 +1,11 @@
-package com.learn;
+package com.learn.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrderServiceApplication {
+public class PaymentServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(OrderServiceApplication.class);
+        SpringApplication.run(PaymentServiceApplication.class);
     }
 }
