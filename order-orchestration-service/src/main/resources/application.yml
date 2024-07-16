@@ -1,0 +1,21 @@
+server:
+  port: 8084
+
+spring:
+  cloud:
+    function:
+      definition: processor
+    stream:
+      bindings: # here "out" represent publisher to the topic
+        processor-in-0: # here 0 is any number. we can specify any number of topics here as like this
+          destination: order-created  # This is the topic name we are going to consume
+        processor-out-0:
+          destination: order-updated
+      kafka:
+        binder:
+          replication-factor: 1
+
+service:
+  endpoints:
+    inventory: http://localhost:8081
+    payment: http://localhost:8082

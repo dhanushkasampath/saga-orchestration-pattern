@@ -26,7 +26,8 @@
 		<module>payment-service</module>
 		<module>inventory-service</module>
 		<module>common-dtos</module>
-	</modules>
+        <module>order-orchestration-service</module>
+    </modules>
     <scm>
 		<connection/>
 		<developerConnection/>

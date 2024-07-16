@@ -26,6 +26,7 @@ public class OrderConsumer {
         return () -> flux;
     }
 
+    @Bean
     public Consumer<Flux<OrchestratorResponseDto>> consumer() {
         return c -> c.doOnNext(a -> System.out.println("Consuming::" + a))
             .flatMap(orchestratorResponseDto -> updateService.updateOrder(orchestratorResponseDto))
